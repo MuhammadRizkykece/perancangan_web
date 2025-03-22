@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Muhammad Rizky</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .biodata-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 700px;
+            display: flex;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .biodata-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .biodata-info {
+            flex: 1;
+            padding-right: 30px;
+        }
+
+        h1 {
+            color: #00ff88;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #00ff88;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        strong {
+            color: #00ff88;
+            display: inline-block;
+            min-width: 150px;
+        }
+
+        .biodata-image {
+            display: flex;
+            align-items: center;
+        }
+
+        .biodata-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .biodata-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .biodata-container {
+                flex-direction: column;
+                width: 90%;
+                margin: 20px;
+            }
+            
+            .biodata-info {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .biodata-image img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="biodata-container">
+        <div class="biodata-info">
+            <h1>BIODATA DIRI</h1>
+            <div class="info-item">
+                <strong>Nama:</strong> Muhammad Rizky
+            </div>
+            <div class="info-item">
+                <strong>NIM:</strong> 2403311209
+            </div>
+            <div class="info-item">
+                <strong>Kelas:</strong> IF C SG
+            </div>
+            <div class="info-item">
+                <strong>Tempat, Tgl Lahir:</strong> Medan, 28 Maret 2007
+            </div>
+            <div class="info-item">
+                <strong>Jenis Kelamin:</strong> Laki-laki
+            </div>
+            <div class="info-item">
+                <strong>Alamat:</strong> Jl. Marindal Psr 7, Gg. Kedondong
+            </div>
+            <div class="info-item">
+                <strong>Agama:</strong> Islam
+            </div>
+            <div class="info-item">
+                <strong>Status:</strong> Belum Kawin
+            </div>
+            <div class="info-item">
+                <strong>Pekerjaan:</strong> Mahasiswa
+            </div>
+            <div class="info-item">
+                <strong>Email:</strong> muhammadrizky282007@gmail.com
+            </div>
+            <div class="info-item">
+                <strong>Telepon:</strong> +62 853 7288 3892
+            </div>
+        </div>
+
+        <div class="biodata-image">
+            <img src="img/rizky.jpg" alt="profile">
+        </div>
+    </div>
+</body>
+</html>
