@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Buku</title>
+    <link rel="stylesheet" href="pert11.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Search</h2>
+            <div class="search-form">
+                <input type="text" id="searchInput" placeholder="Masukkan kata kunci...">
+                <div class="search-options">
+                    <input type="radio" id="title" name="searchType" value="title" checked>
+                    <label for="title">Title</label>
+                    <input type="radio" id="author" name="searchType" value="author">
+                    <label for="author">Author</label>
+                    <input type="radio" id="publisher" name="searchType" value="publisher">
+                    <label for="publisher">Publisher</label>
+                    <input type="radio" id="titleYear" name="searchType" value="titleYear">
+                    <label for="titleYear">Title & Year:</label>
+                    <input type="text" id="yearInput" placeholder="2018">
+                </div>
+            </div>
+        </header>
+
+        <main id="book-list" class="book-list">
+            </main>
+    </div>
+
+    <script src="pert11.js"></script>
+</body>
+</html>
